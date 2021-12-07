@@ -1,8 +1,20 @@
 board = []
-black = ['b_R', 'b_K', 'b_B', 'b_K', 'b_Q', 'b_B1', 'b_K1', 'b_R1']
-white = ['w_R', 'w_K', 'w_B', 'w_K', 'w_Q', 'w_B1', 'w_K1', 'w_R1']
+black = ['b_R', 'b_Kn', 'b_B', 'b_K', 'b_Q', 'b_B1', 'b_K1', 'b_R1']
+white = ['w_R', 'w_Kn', 'w_B', 'w_K', 'w_Q', 'w_B1', 'w_K1', 'w_R1']
 black_pawn = ['b_P', 'b_P', 'b_P', 'b_P', 'b_P', 'b_P', 'b_P', 'b_P']
 white_pawn = ['w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P']
+"""
+    b_R = black Rook, b_Kn = black Knight, b_B = black Bishop, b_K = black King, b_Q = black Queen
+    w_R = white Rook, w_Kn = white Knight, w_B = white Bishop, w_K = white King, w_Q = white Queen
+"""
+    
+w_K = '\u2654'
+w_Q = '\u2655'
+w_B = '\u2657'
+w_B1 = '\u2657'
+w_Kn = '\u2658'
+w_Kn = '\u2658'
+w_P = '\u2659'
 
 def boardcreation():
     
@@ -16,7 +28,7 @@ def boardcreation():
         elif i == 7:
             board.append(white)
         else:
-            board.append(['_'] * 8)
+            board.append([' '] * 8)
               
 boardcreation()
 
@@ -76,10 +88,14 @@ while answer == "Y":
     question1 = "Do you want to continue playing?: Y/N "
     print(question1)
     answer = str(input())
+    
 if answer != "Y":
     print("The game have finished")
     f = open( usuary + ".txt", "r")  
+    z = 0
     for line in f:
-        print(line)
+        z =z + 1
+        if z > movement * 9:
+            print(line)
     
     f.close()

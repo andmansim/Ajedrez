@@ -1,18 +1,27 @@
 Board chess
-b_R	b_K	b_B	b_K	b_Q	b_B1	b_K1	b_R1
+b_R	b_Kn	b_B	b_K	b_Q	b_B1	b_K1	b_R1
 b_P	b_P	b_P	b_P	b_P	b_P	b_P	b_P
-_	_	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
 w_P	w_P	w_P	w_P	w_P	w_P	w_P	w_P
-w_R	w_K	w_B	w_K	w_Q	w_B1	w_K1	w_R1
+w_R	w_Kn	w_B	w_K	w_Q	w_B1	w_K1	w_R1
 1 movement
-b_R	b_K	b_B	b_K	b_Q	b_B1	b_K1	b_R1
+b_R	b_Kn	b_B	b_K	b_Q	b_B1	b_K1	b_R1
 b_P	 	b_P	b_P	b_P	b_P	b_P	b_P
-_	b_P	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
-_	_	_	_	_	_	_	_
+ 	b_P	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
 w_P	w_P	w_P	w_P	w_P	w_P	w_P	w_P
-w_R	w_K	w_B	w_K	w_Q	w_B1	w_K1	w_R1
+w_R	w_Kn	w_B	w_K	w_Q	w_B1	w_K1	w_R1
+2 movement
+b_R	b_Kn	b_B	b_K	b_Q	b_B1	b_K1	b_R1
+b_P	 	b_P	b_P	b_P	b_P	b_P	b_P
+ 	 	 	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+ 	 	b_P	 	 	 	 	 
+ 	 	 	 	 	 	 	 
+w_P	w_P	w_P	w_P	w_P	w_P	w_P	w_P
+w_R	w_Kn	w_B	w_K	w_Q	w_B1	w_K1	w_R1
