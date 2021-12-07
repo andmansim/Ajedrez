@@ -78,4 +78,8 @@ while answer == "Y":
     answer = str(input())
 if answer != "Y":
     print("The game have finished")
+    f = open( usuary + ".txt", "r")  
+    data = f.readlines()[(movement) * 9 : (movement) * 9 + 8 ]
+    f.close()
+    print(data)
     
