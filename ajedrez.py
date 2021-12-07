@@ -17,10 +17,9 @@ def boardcreation():
             board.append(white)
         else:
             board.append(['_'] * 8)
-            
-                
-    
+              
 boardcreation()
+
 for x in board:
     print("  ".join(x))
 
@@ -41,8 +40,9 @@ f.close()
 question1 = "Do you want to continue playing?: Y/N "
 print(question1)
 answer = str(input())
-if answer == "Y":
-    print("What piece do you want to move? (Put the line and column where it is):")
+while answer == "Y":
+    # answers and questions
+    print("What piece do you want to move? (Put the line and column where it is,lines and columns are from 0 to 7):")
     print("Line of the piece:")
     line = int(input())
     print("Column of the piece:")
@@ -51,5 +51,27 @@ if answer == "Y":
     new_line = int(input())
     print("Column of the new position:")
     new_column = int(input())
-else:
+    
+    # modification of the board
+    
+    board[new_line][new_column] = board[line][column]
+    board[line][column] = " "
+    for x in board:
+        print(" ".join(x))
+    
+    f = open( usuary + ".txt", "a")
+    for x in range(0,8):
+        for y in range(0,8):
+        
+            if y == 7: 
+                f.write(str(board[x][y] + '\n'))
+            else:
+                f.write(str(board[x][y]) + '\t')
+    
+    f.close()
+    question1 = "Do you want to continue playing?: Y/N "
+    print(question1)
+    answer = str(input())
+if answer != "Y":
     print("The game have finished")
+    
