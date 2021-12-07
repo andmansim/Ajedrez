@@ -37,3 +37,19 @@ for x in range(0,8):
             f.write(str(board[x][y]) + '\t')
     
 f.close()
+
+question1 = "Do you want to continue playing?: Y/N "
+print(question1)
+answer = str(input())
+if answer == "Y":
+    print("What piece do you want to move? (Put the line and column where it is):")
+    print("Line of the piece:")
+    line = int(input())
+    print("Column of the piece:")
+    column = int(input())
+    print("Line of the new position:")
+    new_line = int(input())
+    print("Column of the new position:")
+    new_column = int(input())
+else:
+    print("The game have finished")
