@@ -24,7 +24,10 @@ boardcreation()
 for x in board:
     print("  ".join(x))
 
-f = open("ajedrez.txt", "w")
+print("Usuary put here a name for your file: ")
+usuary = str(input())
+
+f = open( usuary + ".txt", "w")
 for x in range(0,8):
     for y in range(0,8):
         
