@@ -27,6 +27,7 @@ print("Usuary put here a name for your file: ")
 usuary = str(input())
 
 f = open( usuary + ".txt", "w")
+f.write("Board chess" + '\n')
 for x in range(0,8):
     for y in range(0,8):
         
@@ -40,6 +41,7 @@ f.close()
 question1 = "Do you want to continue playing?: Y/N "
 print(question1)
 answer = str(input())
+movement = 0
 while answer == "Y":
     # answers and questions
     print("What piece do you want to move? (Put the line and column where it is,lines and columns are from 0 to 7):")
@@ -52,6 +54,7 @@ while answer == "Y":
     print("Column of the new position:")
     new_column = int(input())
     
+    movement = movement + 1
     # modification of the board
     
     board[new_line][new_column] = board[line][column]
@@ -60,6 +63,7 @@ while answer == "Y":
         print(" ".join(x))
     
     f = open( usuary + ".txt", "a")
+    f.write(str(movement) + " movement" + '\n')
     for x in range(0,8):
         for y in range(0,8):
         
