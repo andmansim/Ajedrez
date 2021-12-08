@@ -8,13 +8,6 @@ white_pawn = ['w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P', 'w_P']
     w_R = white Rook, w_Kn = white Knight, w_B = white Bishop, w_K = white King, w_Q = white Queen
 """
     
-w_K = '\u2654'
-w_Q = '\u2655'
-w_B = '\u2657'
-w_B1 = '\u2657'
-w_Kn = '\u2658'
-w_Kn = '\u2658'
-w_P = '\u2659'
 
 def boardcreation():
     
